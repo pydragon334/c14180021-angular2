@@ -12,5 +12,9 @@ export class InputComponent implements OnInit {
   isi = "";
   tanggal = "";
   ngOnInit() {}
-  NOTE() {}
+  NOTE() {
+    this.globalvar.setjudul(this.judul);
+    this.globalvar.setisi(this.isi);
+    this.globalvar.settanggal(this.tanggal);
+  }
 }
