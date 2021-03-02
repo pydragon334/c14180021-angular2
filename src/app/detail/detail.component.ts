@@ -8,13 +8,6 @@ import { GlobalvarService } from "../globalvar.service";
 })
 export class DetailComponent implements OnInit {
   constructor(public globalvar: GlobalvarService) {}
-  judul;
-  isi;
-  tanggal;
 
-  ngOnInit() {
-    this.judul = this.globalvar.getjudul();
-    this.isi = this.globalvar.getisi();
-    this.tanggal = this.globalvar.gettanggal();
-  }
+  ngOnInit() {}
 }
